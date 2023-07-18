@@ -1,29 +1,16 @@
 # Email Forward Parser
 
-[![Test and Build](https://github.com/crisp-oss/email-forward-parser/workflows/Test%20and%20Build/badge.svg?branch=master)](https://github.com/crisp-oss/email-forward-parser/actions?query=workflow%3A%22Test+and+Build%22) [![Build and Release](https://github.com/crisp-oss/email-forward-parser/workflows/Build%20and%20Release/badge.svg)](https://github.com/crisp-oss/email-forward-parser/actions?query=workflow%3A%22Build+and+Release%22) [![NPM](https://img.shields.io/npm/v/email-forward-parser.svg)](https://www.npmjs.com/package/email-forward-parser) [![Downloads](https://img.shields.io/npm/dt/email-forward-parser.svg)](https://www.npmjs.com/package/email-forward-parser)
+[![Test and Build](https://github.com/ch4nn0n/email-forward-parser/workflows/Test%20and%20Build/badge.svg?branch=master)](https://github.com/ch4nn0n/email-forward-parser/actions?query=workflow%3A%22Test+and+Build%22) [![Build and Release](https://github.com/ch4nn0n/email-forward-parser/workflows/Build%20and%20Release/badge.svg)](https://github.com/ch4nn0n/email-forward-parser/actions?query=workflow%3A%22Build+and+Release%22) [![NPM](https://img.shields.io/npm/v/@ch4nn0n/email-forward-parser.svg)](https://www.npmjs.com/package/@channon/email-forward-parser) [![Downloads](https://img.shields.io/npm/dt/@channon/email-forward-parser.svg)](https://www.npmjs.com/package/@channon/email-forward-parser)
 
 Parses forwarded emails and extracts original content.
 
 This library supports most common email clients and locales.
 
-**😘 Maintainer**: [@eliottvincent](https://github.com/eliottvincent)
-
-## Who uses it?
-
-<table>
-<tr>
-<td align="center"><a href="https://crisp.chat/"><img src="https://crisp.chat/favicon-256x256.png" height="64" /></a></td>
-</tr>
-<tr>
-<td align="center">Crisp</td>
-</tr>
-</table>
-
-_👋 You use this library and you want to be listed there? [Contact us](https://crisp.chat/)._
+## Motivation
+The original project from [Crisp](https://crisp.chat/) [email-reply-parser](https://github.com/crisp-oss/email-forward-parser) relies on the [RE2](https://www.npmjs.com/package/re2) library, which is not available on all platforms, namely some serverless and browser environments. This fork is a pure javascript implementation of the same library.  
 
 ## Features
 
-This library is used at [Crisp](https://crisp.chat/) everyday with around 1 million inbound emails.
 * Supported clients: Apple Mail, Gmail, Outlook Live / 365, Outlook 2013, Outlook 2019, New Outlook 2019, Yahoo Mail, Thunderbird, Missive, HubSpot, IONOS by 1 & 1
 * Supported locales: Croatian, Czech, Danish, Dutch, English, French, Finnish, German, Hungarian, Italian, Japanese, Norwegian, Polish, Portuguese (Brazil), Portuguese (Portugal), Romanian, Russian, Slovak, Spanish, Swedish, Turkish, Ukrainian
 
